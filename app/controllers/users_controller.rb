@@ -33,6 +33,7 @@ class UsersController < ApplicationController
 
     if @user.save
       render json: @user, status: :created, location: @user
+      redirect_to root_url
     else
       render json: @user.errors, status: :unprocessable_entity
     end

@@ -1,5 +1,7 @@
 class JobsController < ApplicationController
 
+  before_filter :authorize, :only => [:edit, :update, :create, :destroy, :index, :show]
+
   def index
     render json: Job.all
   end
@@ -39,6 +41,12 @@ class JobsController < ApplicationController
 private
   def job_params
     params.require(:job).permit(:title, :description, :cost, :status)
+  end
+
+  def authorize
+    unless @user.changeable_by?(user)
+      render :text => 'Unauthorized', :status => :unauthorized
+    end
   end
 
 end
