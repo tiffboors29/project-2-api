@@ -1,18 +1,22 @@
 class JobsController < ApplicationController
 
-  before_filter :authorize, :only => [:edit, :update, :create, :destroy, :index, :show]
+  before_action :authorize, only: [:create, :update, :destroy]
 
   def index
-    render json: Job.all
+    if current_user.admin?
+      render json: Job.all
+    else
+      render json: Job.where(user_id: current_user.id)
+    end
   end
 
-  def show
-    render json: Job.fin(params[:id])
-  end
+  # def show
+  #   render json: Job.find(params[:id])
+  # end
 
-  def new
-    @job = Job.find(params[:id])
-  end
+  # def new
+  #   @job = Job.find(params[:id])
+  # end
 
   def create
     job = Job.create(job_params)
@@ -44,9 +48,10 @@ private
   end
 
   def authorize
-    unless @user.changeable_by?(user)
+    unless current_user.admin?
       render :text => 'Unauthorized', :status => :unauthorized
     end
+    true
   end
 
 end
