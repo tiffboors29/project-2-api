@@ -3,7 +3,6 @@ class JobsController < ApplicationController
   before_action :authorize, only: [:create, :update, :destroy, :show]
 
   def index
-    # render json: Job.all
     if current_user.admin?
       render json: Job.all
     else
@@ -14,10 +13,6 @@ class JobsController < ApplicationController
   def show
     render json: Job.find(params[:id])
   end
-
-  # def new
-  #   @job = Job.find(params[:id])
-  # end
 
   def create
     job = Job.new(job_params)
