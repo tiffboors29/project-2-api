@@ -1,14 +1,22 @@
 Rails.application.routes.draw do
 
   # resources :users, except: [:new, :edit]
+  resources :users
 
   post '/login' => 'users#login'
-
   post '/users' => 'users#create'
+  get '/users' => 'users#index'
+  get '/users/:id' => 'users#show'
+
 
   resources :jobs
 
   post '/jobs' => 'jobs#create'
+  get '/jobs' => 'jobs#index'
+  get '/jobs/:id' => 'jobs#show'
+  patch '/jobs/:id' => 'jobs#update'
+  delete '/jobs/:id' => 'jobs#destroy'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
