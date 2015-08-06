@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate
 
+  attr_reader :current_user
+
 private
 
   def authenticate
