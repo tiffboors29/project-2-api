@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  include Permissions
+
   has_secure_password
 
   before_create :set_token
