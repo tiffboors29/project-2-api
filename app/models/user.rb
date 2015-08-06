@@ -5,8 +5,6 @@ class User < ActiveRecord::Base
 
   validates :email, uniqueness: true
 
-  validates :email, uniqueness: true
-
   def self.login(email, password)
     user = find_by email: email
     user.login password if user
