@@ -1,28 +1,18 @@
-== README
+# Nesto Guitar Service
+Project #2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This backend was built for Nesto Guitar Service, a website that details a local luthier's services and allows customers to track the status of their work orders. The code for backend is Ruby on Rails and uses a SQL database to handle data models and associations. The backend currently handles the creation, and login of users and admin users as well as the jobs or work orders. The website serves the purpose of allowing users to track the work orders that Nesto Guitar Service provides. For this purpose, a jobs model holds all information related to the user's work order and can be updated, deleted and seen by the admin and the user associated with the given job.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Database creation
+
+* In order to complete the requirements of order tracking, I created a user model and a job model. The user model included given_name, surname, email, token and a password that was secured using password digest. The job model included a title, description, cost, status, and reference to the user_id who requested the work order.
+
+
+
+## Deployment
+
+* I deployed my app on Heroku using an Amazon Web Services key.
+
+
+I intend to continue building out the backend of this site so that it can handle ecommerce. I plan to build out a products model with a shopping cart and the neccessary order methods to carry out purchases.
