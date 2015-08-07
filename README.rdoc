@@ -1,18 +1,27 @@
 # Nesto Guitar Service
 Project #2
 
-This backend was built for Nesto Guitar Service, a website that details a local luthier's services and allows customers to track the status of their work orders. The code for backend is Ruby on Rails and uses a SQL database to handle data models and associations. The backend currently handles the creation, and login of users and admin users as well as the jobs or work orders. The website serves the purpose of allowing users to track the work orders that Nesto Guitar Service provides. For this purpose, a jobs model holds all information related to the user's work order and can be updated, deleted and seen by the admin and the user associated with the given job.
+This backend was built for Nesto Guitar Service, a website that details a local luthier's services and allows customers to track the status of their work orders. The code for the backend is Ruby on Rails and uses a SQL database to create, read, update and delete data. The backend currently handles the creation, and login of users and admin users as well as the jobs or work orders. The website serves the purpose of allowing users to track the work orders that Nesto Guitar Service provides. For this purpose, a jobs model holds all information related to the user's work order. While the user is given permission to view their work orders, only admins are able to create, update and delete orders. Similarly, admins can see all open work orders while users can only see their own work orders.
+
 
 
 ## Database creation
 
-* In order to complete the requirements of order tracking, I created a user model and a job model. The user model included given_name, surname, email, token and a password that was secured using password digest. The job model included a title, description, cost, status, and reference to the user_id who requested the work order.
+In order to complete the requirements of order tracking, I created a user model and a job model. The user model included given_name, surname, email, token and a password that was secured using password digest. The job model included a title, description, cost, status, and reference to the user_id who requested the work order.
 
 
 
 ## Deployment
 
-* I deployed my app on Heroku using an Amazon Web Services key.
+I deployed my app on Heroku using an Amazon Web Services key. The backend interacts with the frontend which runs on Github GH-Pages.
+
+The frontend repo of this application gan be found at: [Nesto Guitar Services Frontend](https://github.com/tiffboors29/ng-fe)
 
 
-I intend to continue building out the backend of this site so that it can handle ecommerce. I plan to build out a products model with a shopping cart and the neccessary order methods to carry out purchases.
+
+## Plans for Improvement
+
+I intend to continue building out the backend of this site so that it can handle ecommerce as well as order tracking. I plan to build out a products model with a shopping cart and the neccessary order methods to carry out purchases so that users can purchase guitars and make orders for custom instruments through the application.
+
+
+
