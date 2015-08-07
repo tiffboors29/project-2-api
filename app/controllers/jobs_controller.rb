@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
 
-  before_action :authorize, only: [:create, :update, :destroy, :show]
+  before_action :authorize, only: [:create, :update, :destroy]
 
   def index
     if current_user.admin?
