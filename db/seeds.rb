@@ -1,7 +1,10 @@
+User.delete_all
+Job.delete_all
+
 User.create!([
     {given_name: "Tiffany", surname: "Boorsma", email: "tiff@tiff.com", password: "tiff", admin: true},
-    {given_name: "Guest", email: "guest@nestoguitars.com", password: "nestoguest", admin: true},
-    {given_name: "Charlie", surname: "Conway", email: "charlie@ducks.com", password: "abc123"},
+    {given_name: "Admin", email: "admin@nestoguitars.com", password: "nestoadmin", admin: true},
+    {given_name: "Guest", email: "guest@nestoguitars.com", password: "nestoguest"},
     {given_name: "Greg", surname: "Goldberg", email: "greg@ducks.com", password: "abc123"},
     {given_name: "Michelle", surname: "McKay", email: "michelle@ducks.com", password: "abc123"},
     {given_name: "Fulton", surname: "Reed", email: "fulton@ducks.com", password: "abc123"},
@@ -17,8 +20,8 @@ Job.create!([
   {title: "Acoustic", description: "Re-String & Frett Polish", status: "Ready for Pickup", user_id: 4, cost: 45.25},
   {title: "Jazz Bass", description: "Re-Frett & Full Setup", status: "In Progress", user_id: 5, cost: 75.25},
   {title: "Super Strat", description: "Sparkle Flake Finnish", status: "Ready for Pickup", user_id: 6, cost: 105.25},
-  {title: "Fender", description: "Full Setup", status: "In Progress", user_id: 2, cost: 60.25},
-  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 2, cost: 25.25}
+  {title: "Fender", description: "Full Setup", status: "In Progress", user_id: 3, cost: 60.25},
+  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 4, cost: 25.25}
 ])
 
 
