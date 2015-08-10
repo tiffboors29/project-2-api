@@ -1,6 +1,6 @@
 User.create!([
     {given_name: "Tiffany", surname: "Boorsma", email: "tiff@tiff.com", password: "tiff", admin: true},
-    {given_name: "Gordon", surname: "Bombay", email: "gordon@ducks.com", password: "abc123"},
+    {given_name: "Guest", email: "guest@nestoguitars.com", password: "nestoguest", admin: true},
     {given_name: "Charlie", surname: "Conway", email: "charlie@ducks.com", password: "abc123"},
     {given_name: "Greg", surname: "Goldberg", email: "greg@ducks.com", password: "abc123"},
     {given_name: "Michelle", surname: "McKay", email: "michelle@ducks.com", password: "abc123"},
