@@ -1,5 +1,6 @@
-User.delete_all
 Job.delete_all
+User.delete_all
+
 
 User.create!([
     {given_name: "Tiffany", surname: "Boorsma", email: "tiff@tiff.com", password: "tiff", admin: true},
