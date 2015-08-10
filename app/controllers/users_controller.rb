@@ -15,9 +15,11 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-
-    render json: @users
+    if current_user.admin?
+      render json: User.all
+    else
+      render :text => 'Unauthorized', :status => :unauthorized
+    end
   end
 
   # GET /users/1
