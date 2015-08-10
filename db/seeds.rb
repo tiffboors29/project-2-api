@@ -14,15 +14,15 @@
 # ])
 
 Job.create!([
-  {title: "Fender", description: "Re-Frett & Full Setup", status: "In Progress", user_id: 11, cost: 75.25},
-  {title: "Gibson", description: "Re-String", status: "Ready for Pickup", user_id: 11, cost: 75.25},
-  {title: "Taylor", description: "Full Setup", status: "In Progress", user_id: 12, cost: 60.25},
-  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 11, cost: 25.25},
-  {title: "Acoustic", description: "Re-String & Frett Polish", status: "Ready for Pickup", user_id: 12, cost: 45.25},
-  {title: "Jazz Bass", description: "Re-Frett & Full Setup", status: "In Progress", user_id: 13, cost: 75.25},
-  {title: "Super Strat", description: "Sparkle Flake Finnish", status: "Ready for Pickup", user_id: 14, cost: 105.25},
-  {title: "Fender", description: "Full Setup", status: "In Progress", user_id: 12, cost: 60.25},
-  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 11, cost: 25.25}
+  {title: "Fender", description: "Re-Frett & Full Setup", status: "In Progress", user_id: 20, cost: 75.25},
+  {title: "Gibson", description: "Re-String", status: "Ready for Pickup", user_id: 20, cost: 75.25},
+  {title: "Taylor", description: "Full Setup", status: "In Progress", user_id: 22, cost: 60.25},
+  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 20, cost: 25.25},
+  {title: "Acoustic", description: "Re-String & Frett Polish", status: "Ready for Pickup", user_id: 22, cost: 45.25},
+  {title: "Jazz Bass", description: "Re-Frett & Full Setup", status: "In Progress", user_id: 23, cost: 75.25},
+  {title: "Super Strat", description: "Sparkle Flake Finnish", status: "Ready for Pickup", user_id: 25, cost: 105.25},
+  {title: "Fender", description: "Full Setup", status: "In Progress", user_id: 22, cost: 60.25},
+  {title: "Epiphone", description: "Raise Action", status: "In Progress", user_id: 20, cost: 25.25}
 ])
 
 
