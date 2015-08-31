@@ -24,7 +24,7 @@ I intend to continue building out the backend of this site so that it can handle
 
 ## Check Out My Site!
 
-Check out my site [here]: (http://tiffanyboorsma.com/project-2-frontend/)
+Check out my site [here](http://tiffanyboorsma.com/project-2-frontend/)
 You can register or login to review work orders on the services > my work orders page. Without administrative functions, however, you will not be able to create, update or delete orders.
 To get a feel for the site and the admin capabilities, feel free to sign in with
 * email: admin@nestoguitars.com
