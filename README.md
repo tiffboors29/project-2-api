@@ -13,7 +13,7 @@ In order to complete the requirements of order tracking, I created a user model 
 
 I deployed this backend app on Heroku. The backend interacts with the frontend which runs on Github GH-Pages.
 
-The frontend repo of this application gan be found at: [Nesto Guitar Services Frontend](https://github.com/tiffboors29/ng-fe)
+The frontend repo of this application gan be found at: [Nesto Guitar Services Frontend](https://github.com/tiffboors29/project-2-frontend)
 
 
 
@@ -24,7 +24,7 @@ I intend to continue building out the backend of this site so that it can handle
 
 ## Check Out My Site!
 
-Check out my site [here]: (http://tiffboors29.github.io/ng-fe/)
+Check out my site [here]: (http://tiffanyboorsma.com/project-2-frontend/)
 You can register or login to review work orders on the services > my work orders page. Without administrative functions, however, you will not be able to create, update or delete orders.
 To get a feel for the site and the admin capabilities, feel free to sign in with
 * email: admin@nestoguitars.com
